@@ -6,6 +6,10 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as dates
 import time
 
+"""
+Code written by Ajitesh Misra
+"""
+
 # for this to work you need an actual username and password
 # for the wiki
 login_data = {
