@@ -75,7 +75,7 @@ def find_data_point() -> None:
     print(edits)
 
     # find the current time in the given format
-    time = datetime.now().strptime("25/01/2019, 23:55:08" , "%d/%m/%Y, %H:%M:%S")
+    time = datetime.now().strptime("%d/%m/%Y, %H:%M:%S")
 
     # update the data points as a tuple of (time, edit)
     data_points.append((time, edits))
