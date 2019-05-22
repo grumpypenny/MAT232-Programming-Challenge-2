@@ -97,11 +97,7 @@ def plot_data() -> None:
 
     # configure the x axis to show all the data points
     # starting with the first one, and then the last point
-    axes.set_xlim(data_points[0][0] - timedelta(hours= 3), data_points[-1][0] + timedelta(hours= 3))
-
-    # set up x axis to be date and times
-    axes.xaxis.set_major_formatter(dates.DateFormatter("%Y/%m/%d  %H:%M:%S"))
-    axes.xaxis.set_minor_formatter(dates.DateFormatter("%Y/%m/%d  %H:%M:%S"))
+    axes.set_xlim(data_points[0][0], data_points[-1][0])
 
     # tilt the x axis labels to be more readable
     figure.autofmt_xdate()
